@@ -1,4 +1,5 @@
 #include<iostream>
+#include<typeinfo>
 using namespace std;
 
 template<typename T>
@@ -28,12 +29,20 @@ void f_ptr(T* param) {
   cout << "result is " << param << endl;
 }
 
+template<class type>
+type f_auto(type &a, type &b) {
+  cout << "type name is a "<< a << " type b is " << b << endl;
+  return a;
+}
+
 int main() {
  double     x  = 3, x1 = 4;
  int        y  = 5,  z = 6;
  const int  cx = x;
  const int& rx = x;
  const char* const pointers = "fun with pointers";
+
+ auto k = f_auto(y, z);
 
  f_uni(x);
  f_uni(cx);
@@ -50,4 +59,3 @@ int main() {
  f_val(pointers);
  // f3(double x, int y) error type deduction two different datatype
 }
-
