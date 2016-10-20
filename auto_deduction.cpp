@@ -21,6 +21,9 @@ int main()
   cout << "the sum2 is " << sum2(3) << endl;
   cout << "the sum3 is " << sum3(3) << endl;
   cout << "the sum4 is " << sum4(3) << endl;
+<<<<<<< HEAD
   //comment try
+=======
+>>>>>>> 200f207a34a2d8b2cf53ee2ccc663a68c4020628
   return 0;
 }
