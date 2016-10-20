@@ -22,5 +22,5 @@ int main()
   cout << "the sum3 is " << sum3(3) << endl;
   cout << "the sum4 is " << sum4(3) << endl;
   //comment try
-  retu 0;
+  return 0;
 }
